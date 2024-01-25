@@ -11,7 +11,7 @@ const POSTGRES_PORT = process.env.POSTGRES_PORT || 5432;
 
 const pgConnect = `postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@localhost:6432/food`
 const remoteConnect = process.env.REMOTE_DATABASE;
-let pgURI = process.env.REMOTE_DATABASE || pgConnect;
+const pgURI = process.env.REMOTE_DATABASE || pgConnect;
 console.log(remoteConnect);
 
 const pool = new pg.Pool({
