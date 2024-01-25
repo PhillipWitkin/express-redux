@@ -1,0 +1,22 @@
+{
+  "name": "express-redux",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "testGetAll.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migration": "node migrate.js",
+    "dev": "nodemon express.js",
+    "start": "node express.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.3",
+    "pg": "^8.11.3"
+  }
+}
